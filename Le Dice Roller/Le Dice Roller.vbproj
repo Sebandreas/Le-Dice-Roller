@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6765FD7-F36D-404A-9ED0-4DF6A4ED4D2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Le_Dice_Roller.My.MyApplication</StartupObject>
+    <RootNamespace>Le_Dice_Roller</RootNamespace>
+    <AssemblyName>Le Dice Roller</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Le Dice Roller.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Le Dice Roller.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmOptions_FindPreset.Designer.vb">
+      <DependentUpon>frmOptions_FindPreset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions_FindPreset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnhandledError.Designer.vb">
+      <DependentUpon>frmUnhandledError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnhandledError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modAddPresets.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="modClearFunctions.vb" />
+    <Compile Include="frmCalculating.Designer.vb">
+      <DependentUpon>frmCalculating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions_PresetError2.Designer.vb">
+      <DependentUpon>frmOptions_PresetError2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions_PresetError2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePresetComplete.Designer.vb">
+      <DependentUpon>DeletePresetComplete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePresetComplete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modExitFunctions.vb" />
+    <Compile Include="frmOptions.Designer.vb">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions_RemovePreset.Designer.vb">
+      <DependentUpon>frmOptions_RemovePreset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions_RemovePreset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPresetToRemove.Designer.vb">
+      <DependentUpon>frmSelectPresetToRemove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPresetToRemove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions_PresetError1.Designer.vb">
+      <DependentUpon>frmOptions_PresetError1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions_PresetError1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modPresetFunctions.vb" />
+    <Compile Include="ResetWarning1.Designer.vb">
+      <DependentUpon>ResetWarning1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResetWarning1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetWarning2.Designer.vb">
+      <DependentUpon>ResetWarning2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResetWarning2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSillyDiceNumber.Designer.vb">
+      <DependentUpon>frmSillyDiceNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSillyDiceNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveSucess.Designer.vb">
+      <DependentUpon>SaveSucess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SaveSucess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SubclassedSystemMenu.vb" />
+    <Compile Include="frmDiceNoNumbers.Designer.vb">
+      <DependentUpon>frmDiceNoNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiceNoNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRollsNoNumbers.Designer.vb">
+      <DependentUpon>frmRollsNoNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRollsNoNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYUNOCalculate.Designer.vb">
+      <DependentUpon>frmYUNOCalculate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmYUNOCalculate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRollsMessage.Designer.vb">
+      <DependentUpon>frmRollsMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRollsMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiceMessage.Designer.vb">
+      <DependentUpon>frmDiceMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiceMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelpDialog.Designer.vb">
+      <DependentUpon>frmHelpDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelpDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modFunctions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCalculating.resx">
+      <DependentUpon>frmCalculating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions_FindPreset.resx">
+      <DependentUpon>frmOptions_FindPreset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions_PresetError2.resx">
+      <DependentUpon>frmOptions_PresetError2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePresetComplete.resx">
+      <DependentUpon>DeletePresetComplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions_RemovePreset.resx">
+      <DependentUpon>frmOptions_RemovePreset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPresetToRemove.resx">
+      <DependentUpon>frmSelectPresetToRemove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiceNoNumbers.resx">
+      <DependentUpon>frmDiceNoNumbers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRollsNoNumbers.resx">
+      <DependentUpon>frmRollsNoNumbers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions_PresetError1.resx">
+      <DependentUpon>frmOptions_PresetError1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnhandledError.resx">
+      <DependentUpon>frmUnhandledError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYUNOCalculate.resx">
+      <DependentUpon>frmYUNOCalculate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRollsMessage.resx">
+      <DependentUpon>frmRollsMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiceMessage.resx">
+      <DependentUpon>frmDiceMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelpDialog.resx">
+      <DependentUpon>frmHelpDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetWarning1.resx">
+      <DependentUpon>ResetWarning1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetWarning2.resx">
+      <DependentUpon>ResetWarning2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSillyDiceNumber.resx">
+      <DependentUpon>frmSillyDiceNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveSucess.resx">
+      <DependentUpon>SaveSucess.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\le_labelo_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\by-nc-sa.eu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200px-Tick_green_modern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuvola_apps_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuvola_apps_filetypes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200px-Nuvola_apps_important.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200px-Nuvola_apps_important_yellow.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_dash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
